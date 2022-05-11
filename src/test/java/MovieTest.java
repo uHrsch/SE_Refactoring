@@ -7,7 +7,6 @@ public class MovieTest {
     @BeforeEach
     public void beforeEach() {
         movie = new Movie("Film", 0);
-        System.out.println(movie);
     }
 
     @Test
