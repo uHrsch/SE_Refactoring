@@ -5,18 +5,18 @@ import static org.junit.Assert.assertEquals;
 import java.util.Vector;
 
 
-public class CustomerTest {
+class CustomerTest {
 
     static final Customer customer = new Customer("Adam");
     static final Vector rentals = new Vector();
 
     @Test
-    public void getName() {
+    void getName() {
         assertEquals("Adam", this.customer.getName());
     }
 
     @Test
-    public void statement() {
+    void statement() {
         String statementExp = "Rental Record for " + customer.getName() + "\n";
         statementExp += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
         statementExp += "Amount owed is " + "0.0" + "\n";
@@ -26,7 +26,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void addRental() {
+    void addRental() {
         int i = rentals.size();
 
         rentals.addElement(new Rental(new Movie("TITLE", 0), 0));
