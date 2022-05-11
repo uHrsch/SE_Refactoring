@@ -1,5 +1,3 @@
-import java.lang.*;
-import java.util.*;
 import java.util.logging.Logger;
 
 /**
@@ -11,7 +9,7 @@ public class Program
 {
 
 
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         Logger l = Logger.getLogger("log");
         String result;
