@@ -17,7 +17,7 @@ class MovieTest {
     @Test
     void setPriceCode() {
         movie.setPriceCode(0);
-        assertEquals(movie.getPriceCode(), 0);
+        assertEquals (0, movie.getPriceCode());
     }
 
     @Test
