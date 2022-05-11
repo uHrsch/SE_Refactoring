@@ -1,7 +1,7 @@
 import static org.junit.Assert.assertEquals;
 import org.junit.jupiter.api.*;
 
-public class MovieTest {
+class MovieTest {
     public Movie movie;
 
     @BeforeEach
@@ -10,18 +10,18 @@ public class MovieTest {
     }
 
     @Test
-    public void getPriceCode() {
+    void getPriceCode() {
         assertEquals(0, movie.getPriceCode());
     }
 
     @Test
-    public void setPriceCode() {
+    void setPriceCode() {
         movie.setPriceCode(0);
         assertEquals(movie.getPriceCode(), 0);
     }
 
     @Test
-    public void getTitle() {
+    void getTitle() {
         assertEquals("Film", movie.getTitle());
     }
 }
