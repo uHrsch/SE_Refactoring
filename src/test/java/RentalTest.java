@@ -2,8 +2,8 @@ import org.junit.*;
 import static org.junit.Assert.assertEquals;
 
 public class RentalTest {
-
-    private Rental rental = new Rental(new Movie("TEST", 0), 0);
+    Movie movie = new Movie("TEST", 0);
+    private Rental rental = new Rental(movie, 0);
 
     @Test
     public void getDaysRented(){
@@ -12,6 +12,6 @@ public class RentalTest {
 
     @Test
     public  void getMovie(){
-        assertEquals("TEST", rental.getMovie());
+        assertEquals(movie, rental.getMovie());
     }
 }
