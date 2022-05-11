@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Customer {
     private String name;
-    private ArrayList rentals = new ArrayList<Rental>();
+    private List<Rental> rentals = new ArrayList();
     public Customer (String newname){
         name = newname;
     };
@@ -15,7 +15,7 @@ public class Customer {
     };
     public String statement() {
         int frequentRenterPoints = 0;
-        ArrayList enumRentals = rentals;
+        List<Rental> enumRentals = rentals;
         String result = "Rental Record for " + this.getName() + "\n";
         result += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
         int i = 0;
@@ -39,7 +39,7 @@ public class Customer {
     }
 
     private double getTotalCharge() {
-        ArrayList enumRentals = rentals;
+        List<Rental> enumRentals = rentals;
         double result = 0;
         int i = 0;
         while (i < enumRentals.size()) {
