@@ -1,15 +1,13 @@
-
-import org.junit.*;
 import static org.junit.Assert.assertEquals;
-
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.*;
 
 public class MovieTest {
-    private Movie movie;
+    public Movie movie;
 
     @BeforeEach
     public void beforeEach() {
         movie = new Movie("Film", 15);
+        System.out.println(movie);
     }
 
     @Test
