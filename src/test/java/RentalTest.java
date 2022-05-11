@@ -1,17 +1,17 @@
 import org.junit.jupiter.api.*;
 import static org.junit.Assert.assertEquals;
 
-public class RentalTest {
+class RentalTest {
     Movie movie = new Movie("TEST", 0);
     private Rental rental = new Rental(movie, 0);
 
     @Test
-    public void getDaysRented(){
+    void getDaysRented(){
         assertEquals(0, rental.getDaysRented());
     }
 
     @Test
-    public  void getMovie(){
+    void getMovie(){
         assertEquals(movie, rental.getMovie());
     }
 }
