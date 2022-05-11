@@ -6,19 +6,19 @@ public class MovieTest {
 
     @BeforeEach
     public void beforeEach() {
-        movie = new Movie("Film", 15);
+        movie = new Movie("Film", 0);
         System.out.println(movie);
     }
 
     @Test
     public void getPriceCode() {
-        assertEquals(15, movie.getPriceCode());
+        assertEquals(0, movie.getPriceCode());
     }
 
     @Test
     public void setPriceCode() {
-        movie.setPriceCode(10);
-        assertEquals(movie.getPriceCode(), 10);
+        movie.setPriceCode(0);
+        assertEquals(movie.getPriceCode(), 0);
     }
 
     @Test
